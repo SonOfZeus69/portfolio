@@ -1,0 +1,87 @@
+@import "./main.scss";
+
+// Hero
+.hero {
+    .hero__image {
+        padding: 5rem 0.5rem;
+        img {
+            max-width: 100%;
+            display: flex;       
+            margin: 0 auto;
+        }
+    }
+
+    .hero__text {
+        padding-bottom: 2rem;
+        article {
+            h1 {
+                color: $primary;
+                font-size: 3rem;
+                letter-spacing: 2px;
+                padding-bottom: 1rem;
+                &:hover {
+                    .greet {
+                        transform: rotate(30deg);
+                    }
+                }
+
+                .greet {                    
+                    display: inline-block;
+                    transition: .35s linear;
+                }
+            }  
+            
+            P {
+                margin: 1rem 0;
+            }       
+    
+            .skills {
+                li {
+                    list-style-type: square;
+                    list-style-position: inside;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 595px) {
+    body {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    
+    .hero {
+        .hero__image {
+            img {
+                width: 467px;
+                height: 403.2px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding-left: calc(40% + 3rem);
+    }
+    
+    .hero {
+        .hero__image {
+            position: fixed;
+            z-index: 5;
+            left: 1rem;
+            width: 40%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
