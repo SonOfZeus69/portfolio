@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="https://kit.fontawesome.com/c6af6339c2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c6af6339c2.js" crossorigin="anonymous" defer></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js" defer></script> -->
     <script src="./app.js" defer></script>
 </head>
 <body>
@@ -35,7 +37,7 @@
 
             <div class="hero__text">
                 <article>
-                    <h1>Hello There! <span class="greet">👋🏾</span></h1>
+                    <h1>Hola! <span class="greet">👋🏾</span></h1>
                     <p>I'm <strong>Babajide Sobowale</strong>. A <strong>Frontend Developer</strong> based in <strong>Osun State, Nigeria</strong>.</p>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi reiciendis ipsam facilis incidunt reprehenderit 
@@ -44,15 +46,15 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit 
                         quos dolores iusto doloribus quibusdam rerum et neque, possimus esse in.</p>
 
-                        <p>I'm proficiently skilled in;</p>
-
-                        <ul>
+                    <p>Core technologies I work with include;
+                        <ul class="skills">
                             <li><i class="fa fa-html5" aria-hidden="true"></i> HTML5</li>
                             <li><i class="fa fa-css3" aria-hidden="true"></i> CSS3</li>
                             <li><i class="fab fa-sass" aria-hidden="true"></i> Sass</li>
                             <li><i class="fab fa-js-square" aria-hidden="true"></i> JavaScript</li>
                             <li><i class="fab fa-python" aria-hidden="true"></i> Python</li>
                         </ul>
+                    </p>
                 </article>
             </div>
         </section>
@@ -62,9 +64,9 @@
             <li class="line--3"></li>
         </ul>
         <section class="cta">
-            <h2>Need a Developer?</h2>
-            
-            <p><a href="mailto:sobowaleheyzeez@gmail.com">Reach out through <strong>sobowaleheyzeez@gmail.com</strong></a></p>
+            <h2>Need a developer?</h3>
+
+            <p><a href="mailto:sobowaleheyzeez@gmail.com" id="reach-out">Reach out through <strong>sobowaleheyzeez@gmail.com</strong><span>&rarr;</span></a></p>
         </section>
         <ul class="underline">
             <li class="line--1"></li>
@@ -79,14 +81,13 @@
         </ul>
     </main>
     <footer id="footer">
-        <h2>Say Hello</h2>
+        <h2>Drop me a line or two</h2>
 
-        <div class="row">
-            <ul class="col">
-                <li><a href="mailto:sobowaleheyzeez@gmail.com">sobowaleheyzeez@gmail.com</a></li>
+        <ul class="col">
+            <li><a href="mailto:sobowaleheyzeez@gmail.com">sobowaleheyzeez@gmail.com</a></li>
                 <l1><a href="wa.me/+23400000000" target="_blank" rel="noopener noreferrer">wa.me/sobowaleheyzeez</a></l1>
                 <li><a href="http://https://t.me/username" target="_blank" rel="noopener noreferrer">t.me/sobowaleheyzeez</a></li>
-            </ul>
+        </ul>
 
         <p>Copyright &copy; 2021 Babajide Sobowale</p>
     </footer>    

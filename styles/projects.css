@@ -286,6 +286,9 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
   .cta {
     padding: 4rem 0;
   }
@@ -398,7 +401,9 @@ footer p {
 }
 
 .projects .project .project__image img {
-  max-width: 105%;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .projects .project .project__buttons {
@@ -416,7 +421,7 @@ footer p {
 }
 
 .projects .project .project__buttons .btn--code {
-  width: 150px;
+  width: 146px;
 }
 
 .projects .btn--more {
@@ -445,6 +450,10 @@ footer p {
   }
   .projects .projects__body .project .project__buttons .btn--live {
     margin-right: 1rem;
+    width: 90px;
+  }
+  .projects .projects__body .project .project__buttons .btn--code {
+    width: 160px;
   }
   .projects .projects__body .project--1 {
     -ms-grid-row: 1;

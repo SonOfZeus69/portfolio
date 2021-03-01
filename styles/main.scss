@@ -202,7 +202,7 @@ header {
     }    
 
     p{
-        margin: auto; 
+        margin: 0 auto; 
         width: 100%;
         a {
             padding: 0;
@@ -249,6 +249,9 @@ footer {
 
 // Media Queries
 @media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
     .cta {
         padding: 4rem 0;
         p{

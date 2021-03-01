@@ -286,6 +286,9 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
   .cta {
     padding: 4rem 0;
   }
